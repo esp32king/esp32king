@@ -24,6 +24,9 @@
 Using them against networks or devices without permission is illegal. I'm not responsible for misuse.</sub>
 
 <br/><br/>
+<div align="center">
+<img src="assets/divider.svg" width="100%"/>
+
 
 <img src="https://img.shields.io/badge/Made_with-❤️_&_⚡_in_UP61-ff00e6?style=for-the-badge&labelColor=05030f"/>
 
