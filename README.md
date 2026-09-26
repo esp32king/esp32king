@@ -19,14 +19,6 @@
 <div align="center">
 <img src="assets/divider.svg" width="100%"/>
 
-## 🚀 Featured Projects
-
-<a href="https://esp32king.github.io/"><img src="https://img.shields.io/badge/👑_ESP32_KING_Web_Flasher-Flash_.bin_from_your_browser_—_no_install-ff00e6?style=for-the-badge&labelColor=05030f"/></a>
-
-<br/><br/>
-
-
-
 ### ⚠️ Disclaimer
 <sub>All security-related projects here are for <b>education & testing on your own devices/networks only</b>.<br/>
 Using them against networks or devices without permission is illegal. I'm not responsible for misuse.</sub>
