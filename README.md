@@ -11,7 +11,7 @@
   <a href="https://instagram.com/krishna_upx61"><img src="https://img.shields.io/badge/Instagram-krishna__upx61-ff00e6?style=for-the-badge&logo=instagram&logoColor=white&labelColor=05030f"/></a>
   <img src="https://komarev.com/ghpvc/?username=esp32king&label=Profile%20Views&color=8a5cff&style=for-the-badge&labelColor=05030f" alt="views"/>
 </p>
-
+<a href="https://github.com/esp32king"> <picture> <source media="(prefers-color-scheme: dark)" srcset="assets/dark_mode.svg"> <img alt="ESP32 KING GitHub profile — Krishna Rajput from UP61, India: styling, large, ESP32 projects, skull warning and continuous scanner." src="assets/light_mode.svg" width="100%"> </picture> </a>
 <img src="assets/divider.svg" width="100%"/>
 
 </div>
