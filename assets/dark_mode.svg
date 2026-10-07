@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="985" height="580" viewBox="0 0 985 580" role="img" aria-labelledby="title desc">
+<title id="title">ESP32 KING — glass neon profile</title>
+<desc id="desc">Glassmorphism and neon profile card for Krishna Rajput, with a large CiferTech-inspired ASCII emblem, continuously scanning beam, ESP32 projects, and a danger-use warning.</desc>
+<style>
+  text,tspan { font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, ui-monospace, monospace; white-space: pre; }
+  .label { fill:#00e5ff; font-size:10px; font-weight:700; letter-spacing:1.7px; }
+  .micro { fill:#a0aec7; font-size:9px; letter-spacing:1px; }
+  .muted { fill:#a0aec7; }
+  .main { fill:#f1f5ff; }
+  .name { fill:#f1f5ff; font-family:Segoe UI,Arial,sans-serif; font-size:23px; font-weight:700; letter-spacing:.2px; }
+  .ascii { fill:#ff173d; font-size:10.3px; font-family:'JetBrains Mono',Consolas,monospace; }
+  .card-title { fill:#f1f5ff; font-size:11px; font-weight:700; letter-spacing:.2px; }
+  .card-sub { fill:#a0aec7; font-size:9px; }
+  .tag-text { fill:#f1f5ff; font-size:9px; font-weight:700; letter-spacing:.2px; }
+  .warn { fill:#ff123b; font-size:9px; font-weight:800; letter-spacing:.8px; }
+  .neon-text { filter:url(#textGlow); }
+  .pulse { animation:pulse 1.25s ease-in-out infinite; }
+  .float { animation:float 4s ease-in-out infinite; transform-origin:center; }
+  @keyframes pulse { 50% { opacity:.32; } }
+  @keyframes float { 50% { opacity:.78; } }
+</style>
+<defs>
+  <clipPath id="clip"><rect width="985" height="580" rx="26"/></clipPath>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#070108"/><stop offset=".55" stop-color="#1b020a"/><stop offset="1" stop-color="#080107"/>
+  </linearGradient>
+  <radialGradient id="cyanAura" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(80 70) rotate(40) scale(500 330)">
+    <stop stop-color="#ff123b" stop-opacity=".38"/><stop offset="1" stop-color="#ff123b" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="pinkAura" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(900 520) rotate(-140) scale(440 300)">
+    <stop stop-color="#ff2444" stop-opacity=".34"/><stop offset="1" stop-color="#ff2444" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#ff123b"/><stop offset=".38" stop-color="#d90031"/><stop offset=".72" stop-color="#ff2444"/><stop offset="1" stop-color="#ff183d"/>
+  </linearGradient>
+  <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#ff2a4d" stop-opacity=".40"/><stop offset=".42" stop-color="#bf092f" stop-opacity=".24"/><stop offset="1" stop-color="#ff2444" stop-opacity=".18"/>
+  </linearGradient>
+  <linearGradient id="glassShine" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#ff2648" stop-opacity=".42"/><stop offset=".23" stop-color="#ff173d" stop-opacity=".14"/><stop offset="1" stop-color="#ff1a40" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#ff123b" stop-opacity="0"/>
+    <stop offset=".38" stop-color="#ff123b" stop-opacity=".05"/>
+    <stop offset=".45" stop-color="#ff123b" stop-opacity=".28"/>
+    <stop offset=".49" stop-color="#d90031" stop-opacity=".78"/>
+    <stop offset=".50" stop-color="#ff5268" stop-opacity=".98"/>
+    <stop offset=".51" stop-color="#ff123b" stop-opacity=".82"/>
+    <stop offset=".57" stop-color="#ff123b" stop-opacity=".22"/>
+    <stop offset=".64" stop-color="#ff123b" stop-opacity=".025"/>
+    <stop offset="1" stop-color="#ff123b" stop-opacity="0"/>
+  </linearGradient>
+  <pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse">
+    <path d="M38 0H0V38" fill="none" stroke="#ff2444" stroke-opacity=".13" stroke-width=".7"/>
+    <circle cx="0" cy="0" r="1.1" fill="#ff123b" fill-opacity=".35"/>
+  </pattern>
+  <filter id="panelGlow" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="textGlow" x="-30%" y="-50%" width="160%" height="200%">
+    <feGaussianBlur stdDeviation="2.3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="asciiGlow" x="-25%" y="-25%" width="150%" height="150%">
+    <feGaussianBlur stdDeviation="2.8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+<g clip-path="url(#clip)">
+  <rect width="985" height="580" fill="url(#bg)"/>
+  <rect width="985" height="580" fill="url(#grid)"/>
+  <rect width="985" height="580" fill="url(#cyanAura)"/>
+  <rect width="985" height="580" fill="url(#pinkAura)"/>
+  <!-- glass panels -->
+  <rect x="18" y="18" width="360" height="544" rx="24" fill="#3a0715" fill-opacity=".88" stroke="url(#neon)" stroke-opacity=".74" stroke-width="1.2"/>
+  <rect x="18" y="18" width="360" height="180" rx="24" fill="url(#glassShine)" opacity=".72"/>
+  <rect x="393" y="18" width="574" height="544" rx="24" fill="#2b0511" fill-opacity=".88" stroke="url(#neon)" stroke-opacity=".69" stroke-width="1.2"/>
+  <rect x="393" y="18" width="574" height="165" rx="24" fill="url(#glassShine)" opacity=".62"/>
+  <rect x="16.5" y="16.5" width="363" height="547" rx="25" fill="none" stroke="url(#neon)" stroke-opacity=".42" stroke-width="3" filter="url(#panelGlow)">
+    <animate attributeName="stroke-opacity" values=".20;.48;.20" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="391.5" y="16.5" width="577" height="547" rx="25" fill="none" stroke="url(#neon)" stroke-opacity=".38" stroke-width="3" filter="url(#panelGlow)">
+    <animate attributeName="stroke-opacity" values=".18;.45;.18" dur="3.6s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="18.5" y="18.5" width="359" height="543" rx="23.5" fill="none" stroke="#ff1a40" stroke-opacity=".10"/>
+  <rect x="393.5" y="18.5" width="573" height="543" rx="23.5" fill="none" stroke="#ff1a40" stroke-opacity=".10"/>
+  <circle cx="202" cy="286" r="170" fill="none" stroke="#ff123b" stroke-opacity=".30" stroke-width="1.35"/>
+  <circle cx="202" cy="286" r="155" fill="none" stroke="#ff2444" stroke-opacity=".72" stroke-width="1.7" stroke-dasharray="2 9">
+    <animateTransform attributeName="transform" type="rotate" from="0 202 286" to="360 202 286" dur="48s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="202" cy="286" r="143" fill="none" stroke="#ff123b" stroke-opacity=".48" stroke-width="1.3" stroke-dasharray="26 350">
+    <animateTransform attributeName="transform" type="rotate" from="360 202 286" to="0 202 286" dur="35s" repeatCount="indefinite"/>
+  </circle>
+  <!-- left glass panel / original large ASCII emblem -->
+  <text x="40" y="50" class="label">☠ ESP32 KING / SIGNAL LAB</text>
+  <text x="40" y="70" class="micro">ASCII EMBLEM · UP61, INDIA</text>
+<g filter="url(#asciiGlow)" opacity=".98">
+    <text x="24" y="143" class="ascii" xml:space="preserve">
+    <tspan x="24" y="143.0">                   .,,......,,,,,:::::.</tspan>
+    <tspan x="24" y="154.0">                     .::;--=---;;:,,,,:;;;.</tspan>
+    <tspan x="24" y="165.0">                 .;=++=;:,,,:,,,:;-==-::##,</tspan>
+    <tspan x="24" y="176.0">   .,:::.       *@+,   .:-=; :+=-;:..,;-,        ,:;;:.</tspan>
+    <tspan x="24" y="187.0">  .+@@@@@#;     .;:,=#@@@@@+ -@@@@@@%+:        =%@@@@%=</tspan>
+    <tspan x="24" y="198.0">     :=%@@@+     ;#@@@@@@@@+ -@@@@@@@@@@+,    +@@@*;.</tspan>
+    <tspan x="24" y="209.0">;;.    +@@@@#+.:%@@@@@@@@@@+ -@@@@@@@@@@@@+.=%@@@@-    ,-;</tspan>
+    <tspan x="24" y="220.0">-@@#=;+@@@@@@++@@@@@@@@@@@@+ -@@@@@@@@@@@@@#-@@@@@@#=+%@@;</tspan>
+    <tspan x="24" y="231.0"> ;%@@@@@@@@@+-@@@@@@@@@@@@+ -@@@@@@@@@@@@@@#;@@@@@@@@@#:</tspan>
+    <tspan x="24" y="242.0">   :=++=-+%@;@@@@@@@@@@@@@@+ -@@@@@@@@@@@@@@@+=%+;-+=;,</tspan>
+    <tspan x="24" y="253.0">           .+@@@@@@@@@@@@@@+ -@@@@@@@@@@@@@@@@.</tspan>
+    <tspan x="24" y="264.0">            #@@@@@@@@@@@@@@+ -@@@####%@@@@@@@@.</tspan>
+    <tspan x="24" y="275.0">            *@@@@@@@@@@@@@@+ -@+.      .,;*@@@.</tspan>
+    <tspan x="24" y="286.0">            -@@@@@@@@@@@@@@+ -@:           +@%</tspan>
+    <tspan x="24" y="297.0">           ,;@@@@@@@%@@@@@@+ -@%.          *@*,,</tspan>
+    <tspan x="24" y="308.0">    :-==-+%@;@@@@@+;=-=%@@@+ -@@%:        =@@-#@#--==-:</tspan>
+    <tspan x="24" y="319.0">  =%@@@@@@@@+=@@@*.@@@#-+@@+ -@@@@*:    :*@@%;@@@@@@@@@%:</tspan>
+    <tspan x="24" y="330.0"> +@@%++%@@@@@=*@@@:+@@@@+;#* -@%++#@@*#%@@@@-%@@@@@*-+%@@;</tspan>
+    <tspan x="24" y="341.0"> *=:    #@@@@+ :+%%;-%@@@%-: :+-*#=-#@@@%*-.:#@@@@=    ,==</tspan>
+    <tspan x="24" y="352.0">      ,;%@@@:     .=+;+@@@@*;-%@@@@*.@*:      +@@@#-,</tspan>
+    <tspan x="24" y="363.0">    =%@@@@#:        :@*-+@@@@@@@@#+=%+         -%@@@@%-</tspan>
+    <tspan x="24" y="374.0">    :;-;:.           ;@=,%@@@@@@#,=@#            .:;;:,</tspan>
+    <tspan x="24" y="385.0">                      ;+@@@@@@@@@@*=</tspan>
+    <tspan x="24" y="396.0">                     +@@@@@+,,+%@@@%.</tspan>
+    <tspan x="24" y="407.0">                     ;*%#-.     ,;:</tspan>
+    </text>
+  </g>
+  <path d="M40 438H356" stroke="url(#neon)" stroke-opacity=".48"/>
+  <text x="40" y="466" class="name" font-size="21">ESP32 KING</text>
+  <text x="40" y="488" class="muted" font-size="11">Krishna Rajput · UP61, India</text>
+  <rect x="40" y="505" width="100" height="25" rx="12.5" fill="#ff123b" fill-opacity=".11" stroke="#ff123b" stroke-opacity=".55"/>
+  <text x="90" y="522" text-anchor="middle" class="tag-text">ESP32</text>
+  <rect x="148" y="505" width="100" height="25" rx="12.5" fill="#d90031" fill-opacity=".12" stroke="#d90031" stroke-opacity=".55"/>
+  <text x="198" y="522" text-anchor="middle" class="tag-text">ESP8266</text>
+  <rect x="256" y="505" width="96" height="25" rx="12.5" fill="#ff2444" fill-opacity=".10" stroke="#ff2444" stroke-opacity=".5"/>
+  <text x="304" y="522" text-anchor="middle" class="tag-text">Wi-Fi · BLE</text>
+  <text x="40" y="548" class="micro">BUILD SMALL · EXPLORE BOLDLY · STAY RESPONSIBLE</text>
+
+  <!-- right glass panel -->
+  <text x="420" y="50" class="label">ESP32 KING / PROFILE.MD</text>
+  <rect x="818" y="32" width="126" height="27" rx="13.5" fill="#ff123b" fill-opacity=".10" stroke="#ff123b" stroke-opacity=".7"/>
+  <circle cx="834" cy="45.5" r="4" fill="#ff123b" filter="url(#panelGlow)" class="pulse"/>
+  <text x="846" y="49" class="label" font-size="9" letter-spacing="1.15">SCANNING</text>
+  <text x="420" y="84" class="name">Krishna Rajput</text>
+  <text x="420" y="104" class="muted" font-size="11">@esp32king  ·  UP61, India</text>
+  <rect x="416" y="116" width="528" height="31" rx="11" fill="#3a0715" fill-opacity=".84" stroke="#ff1a40" stroke-opacity=".16"/>
+  <text x="430" y="136" class="main" font-size="11">“Building cool stuff with tiny chips.”</text>
+
+  <rect x="420" y="157" width="124" height="23" rx="11.5" fill="#ff123b" fill-opacity=".10" stroke="#ff123b" stroke-opacity=".56"/>
+  <text x="482" y="173" text-anchor="middle" class="tag-text">ESP32 / ESP8266</text>
+  <rect x="551" y="157" width="78" height="23" rx="11.5" fill="#d90031" fill-opacity=".12" stroke="#d90031" stroke-opacity=".55"/>
+  <text x="590" y="173" text-anchor="middle" class="tag-text">WI-FI</text>
+  <rect x="636" y="157" width="67" height="23" rx="11.5" fill="#ff2444" fill-opacity=".10" stroke="#ff2444" stroke-opacity=".52"/>
+  <text x="669.5" y="173" text-anchor="middle" class="tag-text">BLE</text>
+  <rect x="710" y="157" width="104" height="23" rx="11.5" fill="#ff183d" fill-opacity=".10" stroke="#ff183d" stroke-opacity=".58"/>
+  <text x="762" y="173" text-anchor="middle" class="tag-text">WEB FLASHER</text>
+  <text x="420" y="202" class="label">FEATURED BUILDS</text>
+  <text x="846" y="202" class="micro">PINNED BUILDS</text>
+
+  <g>
+    <rect x="416" y="213" width="255" height="53" rx="12" fill="#390715" fill-opacity=".82" stroke="#ff123b" stroke-opacity=".48"/>
+    <circle cx="432" cy="231" r="3.5" fill="#ff123b" filter="url(#panelGlow)"/>
+    <text x="444" y="235" class="card-title">Wi-Fi Sniffer</text>
+    <text x="430" y="253" class="card-sub">Wi-Fi / BLE lab experiments</text>
+
+    <rect x="682" y="213" width="262" height="53" rx="12" fill="#390715" fill-opacity=".82" stroke="#ff2444" stroke-opacity=".48"/>
+    <circle cx="698" cy="231" r="3.5" fill="#ff2444" filter="url(#panelGlow)"/>
+    <text x="710" y="235" class="card-title">WiFi Chat</text>
+    <text x="696" y="253" class="card-sub">Local captive-portal chat</text>
+
+    <rect x="416" y="275" width="255" height="53" rx="12" fill="#390715" fill-opacity=".82" stroke="#d90031" stroke-opacity=".52"/>
+    <circle cx="432" cy="293" r="3.5" fill="#d90031" filter="url(#panelGlow)"/>
+    <text x="444" y="297" class="card-title">BLE HID</text>
+    <text x="430" y="315" class="card-sub">Bluetooth HID · web control</text>
+
+    <rect x="682" y="275" width="262" height="53" rx="12" fill="#390715" fill-opacity=".82" stroke="#ff183d" stroke-opacity=".54"/>
+    <circle cx="698" cy="293" r="3.5" fill="#ff183d" filter="url(#panelGlow)"/>
+    <text x="710" y="297" class="card-title">Web Flasher</text>
+    <text x="696" y="315" class="card-sub">Flash ESP boards in-browser</text>
+  </g>
+
+  <text x="420" y="352" class="micro">MORE BUILDS</text>
+  <text x="510" y="352" class="main" font-size="10">WiFi Repeater  ·  WiFi Billboard  ·  ESP32 Storage</text>
+  <path d="M416 367H944" stroke="url(#neon)" stroke-opacity=".42"/>
+  <text x="420" y="389" class="label">CONNECT</text>
+  <rect x="416" y="399" width="176" height="35" rx="11" fill="#390715" fill-opacity=".82" stroke="#ff123b" stroke-opacity=".48"/>
+  <text x="428" y="414" class="micro">WEB</text><text x="428" y="428" class="main" font-size="9.5">esp32king.github.io</text>
+  <rect x="601" y="399" width="170" height="35" rx="11" fill="#390715" fill-opacity=".82" stroke="#ff2444" stroke-opacity=".48"/>
+  <text x="613" y="414" class="micro">INSTAGRAM</text><text x="613" y="428" class="main" font-size="9.5">@krishna_upx61</text>
+  <rect x="780" y="399" width="164" height="35" rx="11" fill="#390715" fill-opacity=".82" stroke="#d90031" stroke-opacity=".5"/>
+  <text x="792" y="414" class="micro">GITHUB</text><text x="792" y="428" class="main" font-size="9.5">@esp32king</text>
+
+  <rect x="416" y="445" width="528" height="51" rx="13" fill="#76001d" fill-opacity=".30" stroke="#ff123b" stroke-opacity=".68"/>
+  <text x="429" y="465" class="warn">☠ DANGER · EDUCATION + AUTHORIZED TESTING ONLY</text>
+  <text x="429" y="483" class="muted" font-size="9">Use only on devices and networks you own or have permission to test.</text>
+  <text x="420" y="522" class="micro">GITHUB SNAPSHOT</text>
+  <rect x="420" y="530" width="101" height="20" rx="10" fill="#ff123b" fill-opacity=".10" stroke="#ff123b" stroke-opacity=".42"/>
+  <text x="470.5" y="544" text-anchor="middle" class="tag-text">23 REPOS</text>
+  <rect x="529" y="530" width="96" height="20" rx="10" fill="#ff2444" fill-opacity=".10" stroke="#ff2444" stroke-opacity=".42"/>
+  <text x="577" y="544" text-anchor="middle" class="tag-text">64 STARS</text>
+  <rect x="633" y="530" width="123" height="20" rx="10" fill="#d90031" fill-opacity=".12" stroke="#d90031" stroke-opacity=".46"/>
+  <text x="694.5" y="544" text-anchor="middle" class="tag-text">14 FOLLOWERS</text>
+  <text x="780" y="544" class="micro">UP61 · INDIA</text>
+
+  <!-- Glass scanner overlay: neon sweep moves continuously across all panels. -->
+  <g pointer-events="none">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 -102;0 680" dur="4.2s" repeatCount="indefinite"/>
+      <rect x="10" y="0" width="965" height="102" fill="url(#scan)" opacity=".52"/>
+      <line x1="10" y1="51" x2="975" y2="51" stroke="url(#neon)" stroke-width="2.1" stroke-opacity="1" filter="url(#panelGlow)"/>
+    </g>
+  </g>
+  <rect x="1" y="1" width="983" height="578" rx="25" fill="none" stroke="url(#neon)" stroke-opacity=".62" stroke-width="1.3"/>
+</g>
+</svg>
